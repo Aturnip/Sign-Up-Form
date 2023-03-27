@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Delicious Handrawn', cursive;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 .leftPanel {
     flex: 2;
-    background: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background: url(left-panel-img.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -37,60 +38,64 @@ body {
 }
 
 .logoText {
+    margin-left: 12px;
     color: white;
-    font-size: 5em;
+    font-size: 6em;
 }
 
 .credit {
+    font-size: 20px;
     margin-top: auto;
     align-self: center;
     color: white;
 }
 
 .rightPanel {
+    font-size: 2em;
     box-sizing: border-box;
     flex: 3;
     background-color: rgb(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .rightPanel p {
-    margin-left: 2em;
 }
 
 .formContainer {
-    background-color: white;
+    text-align: center;
+    background-color: #fcd5b1;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1em;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 2px 2px 8px 9px rgba(0, 0, 0, 0.1);
 }
 
 .letsDo {
+    text-align: center;
     width: 100%;
 }
 
 .inputContainer {
-    margin-left: 2em;
     min-width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-input:focus {
-    outline-color:  blue;
+input {
+    min-height: 32px;
+    border: 3px inset #000;
+    border-radius: 5px;
 }
 
-input:valid {
-    border-color: green;
-}
-
-/* button, input {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font: inherit;
-    line-height: normal;
-  } */
-  
-.submitBtn {
-    margin-left: 2em;
+button {
+    margin: 32px;
+    font-size: 1em;
+    border: 3px inset #000;
+    border-radius: 5px;
+    padding: 6px;
 }
